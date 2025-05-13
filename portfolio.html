@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+        
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     } 
+
+body {
+    background: #2980b9;
+    font-size: 12px;
+}
+
+.container {
+    flex: 0 1 0px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+input {
+    margin: 10px 10px 10px;
+}
+
+.showdata {
+    color: black;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    </style>
+    
+    <title>student calculate</title>
+    
+    
+    
+</head>
+
+<body>
+    
+    <!-- main html  -->
+    <div class="container">
+        <h1>Student grade calculator</h1>
+        <div class="screen-body-item">
+            <div class="app">
+                <div class="form-group">
+                    <!-- option for taking the input -->
+                    <input type="text" 
+                           class="form-control" 
+                           placeholder="CHEMISTRY" 
+                           id="chemistry" />
+                </div>
+                <div class="form-group">
+                    <input type="text" 
+                           class="form-control" 
+                           placeholder="HINDI" id="hindi" />
+                </div>
+                <div class="form-group">
+                    <input type="text" 
+                           class="form-control" 
+                           placeholder="MATHS" id="maths" />
+                </div>
+                <div class="form-group">
+                    <input type="text" 
+                           class="form-control" 
+                           placeholder="PHYSICS" id="phy" />
+                </div>
+                <div>
+                    <input type="button" 
+                           value="show Percentage" 
+                           class="form-button" 
+                           onclick="calculate()" />
+                </div>
+            </div>
+        </div>
+        <!-- for showing the result-->
+        <div class="form-group showdata">
+            <p id="showdata"></p>
+        </div>
+    </div>
+    <!--adding external javascript file-->
+    <script src="script.js">
+        // Function for calculating grades
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+   
